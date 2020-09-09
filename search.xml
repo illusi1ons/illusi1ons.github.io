@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Github中的Fork是什么意思</title>
+      <link href="/2020/09/09/forkTeach/"/>
+      <url>/2020/09/09/forkTeach/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Fork简介"><a href="#Fork简介" class="headerlink" title="Fork简介"></a><font color=#ad2121>Fork简介</font></h2><h6 id="通过搜索阅读，得知："><a href="#通过搜索阅读，得知：" class="headerlink" title="通过搜索阅读，得知："></a>通过搜索阅读，得知：</h6><blockquote><ol><li>Fork就是把别人的公开的仓库（这里称为源仓库）通过Github操作复制，复制到了自己的Github账号下作为自己的一个仓库（这里称为Fork仓库）</li><li>源仓库≠Fork仓库，但是A仓库所拥有：文件、提交历史，issues和其他的东西。B也一样有。</li><li>Fork仓库只是自己Github账号下的一个仓库，本地计算机没有（但可以clone）</li></ol></blockquote><h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a><font color=#ad2121>举例</font></h2><h3 id="Fork并更新一个仓库的流程"><a href="#Fork并更新一个仓库的流程" class="headerlink" title="Fork并更新一个仓库的流程"></a><font color=#2d8896>Fork并更新一个仓库的流程</font></h3><p>有一个叫做Joe的程序猿写了一个游戏程序，而你可能要去改进它。并且Joe将他的代码放在了GitHub仓库上。下面是你要做的事情：</p><p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd001.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd001.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="Fork流程图"></p><blockquote><ol><li>Fork源仓库：这是Github操作，这个操作会复制Joe的仓库（包括：文件、提交历史，issues和其他的东西），复制到了自己的Github账号下作为自己的一个仓库</li><li>clone自己的仓库到本地计算机：Git操作。使用该操作让你发送”请给我发一份我仓库的复制文件”的命令给GitHub。现在这个仓库就会存储在你本地计算机上。</li><li>修改文件：对本地仓库里的内容进行修改</li><li>提交修改：Git操作，将贝蒂所有修改的文件添加到暂存区，并添加提交信息。此操作只在本地完成</li><li>推送提交的内容：Git操作，将提交到暂存区的内容（文件和提交信息）推送到远程仓库（Fork仓库，不是源仓库）</li><li>给Joe发送一个pull request：如果你认为Joe会接受你的修改，你就可以给他发送一个pull request。这是GitHub操作，使用此操作可以帮助你和Joe交流你的修改，并且询问Joe是否愿意接受你的”pull request”，当然，接不接受完全取决于他自己。</li></ol></blockquote><h3 id="同步Fork的仓库"><a href="#同步Fork的仓库" class="headerlink" title="同步Fork的仓库"></a><font color=#2d8896>同步Fork的仓库</font></h3><p>源仓库（Joe的仓库）已经被Joe和其他进行了修改和更新，我们需要在Fork的仓库修改的时候，最好保持Fork仓库和源仓库的最新版本一致下进行修改。所以，需要进行“同步Fork”</p><p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd002.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd002.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><blockquote><ol><li>从源仓库中去取出被更新的文件：Git的fetch操作。使用该命令让你可以从源仓库获取最新的文件。</li><li>将这些被更新的文件合并到本地仓库：Git的merge操作。使用该命令使得那些修改更新到你的本地计算机（那些修改暂时存放在一个”分支”中）。记住：步骤1和2经常结合为一个命令使用，合并后的Git命令叫做”pull”。</li><li>把合并后的本地仓库推送到远程的Fork仓库（可选）：必须推送。但可以在步骤2后立即执行push到Fork仓库。也可以，步骤2之后继续自己的修改文件，最后再push到Fork仓库。</li></ol></blockquote><h3 id="Fork与同步Fork的区别"><a href="#Fork与同步Fork的区别" class="headerlink" title="Fork与同步Fork的区别"></a><font color=#2d8896>Fork与同步Fork的区别</font></h3><p><strong>比较一下fork和同步工作流程的区别</strong>：</p><p>当你最初fork一个仓库的时候，信息的流向是从Joe的仓库到你的仓库，然后再到你本地计算机。但是最初的过程之后，信息的流向是从Joe的仓库到你的本地计算机，之后再到你的仓库。</p><p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd003.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd003.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><font color=#ad2121>总结</font></h2><p>我希望这是一篇关于GitHub和Git的 <a href="https://help.github.com/articles/fork-a-repo">fork</a>有用概述。<br>现在，你已经理解了那些概念，你将会更容易地在实际中执行你的代码。GitHub关于fork和<a href="https://help.github.com/articles/syncing-a-fork">同步</a>的文章将会给你大部分你需要的代码。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+          <category> Github </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>用hexo+github pages+独立域名搭建个人博客</title>
       <link href="/2020/09/06/makeBlog/"/>
       <url>/2020/09/06/makeBlog/</url>
@@ -40,9 +67,7 @@
       
       <categories>
           
-          <category> Hello Blog </category>
-          
-          <category> Hexo </category>
+          <category> Hello </category>
           
       </categories>
       
@@ -67,7 +92,7 @@
       
       <categories>
           
-          <category> Hello Blog </category>
+          <category> Hello </category>
           
       </categories>
       
