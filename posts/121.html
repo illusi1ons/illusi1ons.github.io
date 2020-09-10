@@ -17,9 +17,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Github中的Fork是什么意思 - illusion k</title>
+  <title>用hexo+github pages+独立域名搭建个人博客 - illusion k</title>
   
-    <meta name="keywords" content="Git">
+    <meta name="keywords" content="Blog,Hexo">
   
 
   
@@ -452,7 +452,7 @@
  
 <div id="pjax-data" style="display: none"> 
   <div id="pjax-ispage">true</div> 
-  <div id="pjax-pageTitle">Github中的Fork是什么意思</div> 
+  <div id="pjax-pageTitle">用hexo+github pages+独立域名搭建个人博客</div> 
   <div id="pjax-enable-cover">true</div> 
   <div id="pjax-comment-path"></div> 
   <div id="pjax-comment-placeholder"></div> 
@@ -498,7 +498,7 @@
     
     
       <h1 class="title">
-        Github中的Fork是什么意思
+        用hexo+github pages+独立域名搭建个人博客
       </h1>
       <div class='new-meta-box'>
         
@@ -518,7 +518,7 @@
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/Git/">Git</a><span class="sep"></span><a class="category-link" href="/categories/Git/Github/">Github</a>
+      <a class="category-link" href="/categories/Hexo/">Hexo</a>
     </a>
   </div>
 
@@ -527,6 +527,19 @@
         
           
             
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：649字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：2分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -534,7 +547,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年9月9日</p>
+    <p>发布于：2020年9月6日</p>
   </a>
 </div>
 
@@ -545,7 +558,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="Github中的Fork是什么意思" data-path="/2020/09/09/forkTeach/">
+      <div id="lc-pv" data-title="用hexo+github pages+独立域名搭建个人博客" data-path="/posts/121.html">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -560,9 +573,9 @@
             
 <div class="new-meta-item comments-count">
   
-  <a href="/2020/09/09/forkTeach/#comments">
+  <a href="/posts/121.html#comments">
     <i class="fas fa-comment-dots fa-fw"></i>
-    <span class="valine-comment-count" data-xid="/2020/09/09/forkTeach/">0</span>
+    <span class="valine-comment-count" data-xid="/posts/121.html">0</span>
     <span class="leancloud-comments-count">&nbsp;</span>
   </a>
 </div>
@@ -577,44 +590,88 @@
 
   
   
-  <h2 id="Fork简介"><a href="#Fork简介" class="headerlink" title="Fork简介"></a><font color=#ad2121>Fork简介</font></h2><h6 id="通过搜索阅读，得知："><a href="#通过搜索阅读，得知：" class="headerlink" title="通过搜索阅读，得知："></a>通过搜索阅读，得知：</h6><blockquote>
+  <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a><font color=#ad2121>摘要</font></h2><h6 id="搭建个人博客条件-："><a href="#搭建个人博客条件-：" class="headerlink" title="搭建个人博客条件 ："></a>搭建个人博客条件 ：</h6><blockquote>
+<ul>
+<li>博客框架 + 部署静态网站的平台（托管） + 独立域名  </li>
+<li><font color=#DC143C>本教程使用：  hexo + github pages + 独立域名</font></li>
+<li>不想看介绍，可以直接到教程部分</li>
+</ul>
+</blockquote>
+<h6 id="博客框架："><a href="#博客框架：" class="headerlink" title="博客框架："></a>博客框架：</h6><blockquote>
+<ul>
+<li>WordPress（新手友好）</li>
+<li><font color=#DC143C>Hexo（本站使用，本文教程，模板多，上手容易，美化主题难）</font></li>
+<li>vuepress（模板少，类在线笔记本）</li>
+<li>Jekyll（麻烦）</li>
+<li>Hugo（文档生成速度很快）</li>
+<li>…  </li>
+</ul>
+</blockquote>
+<h6 id="项目源码托管平台"><a href="#项目源码托管平台" class="headerlink" title="项目源码托管平台"></a>项目源码托管平台</h6><blockquote>
+<ul>
+<li>作用：部署静态网站资源  与  项目源码托管，免去了自己搭建服务器和写数据库的麻烦。此外还可以绑定自己的域名</li>
+<li>平台：  </li>
+</ul>
 <ol>
-<li>Fork就是把别人的公开的仓库（这里称为源仓库）通过Github操作复制，复制到了自己的Github账号下作为自己的一个仓库（这里称为Fork仓库）</li>
-<li>源仓库≠Fork仓库，但是A仓库所拥有：文件、提交历史，issues和其他的东西。B也一样有。</li>
-<li>Fork仓库只是自己Github账号下的一个仓库，本地计算机没有（但可以clone）</li>
+<li>Github pages（dns污染，部署后无法访问）</li>
+<li>coding（对移动不友好）</li>
+<li>Vercel（速度快）<br>….<br>平台有挺多的，可以三线部署  ：部署多个平台  </li>
 </ol>
 </blockquote>
-<h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a><font color=#ad2121>举例</font></h2><h3 id="Fork并更新一个仓库的流程"><a href="#Fork并更新一个仓库的流程" class="headerlink" title="Fork并更新一个仓库的流程"></a><font color=#2d8896>Fork并更新一个仓库的流程</font></h3><p>有一个叫做Joe的程序猿写了一个游戏程序，而你可能要去改进它。并且Joe将他的代码放在了GitHub仓库上。下面是你要做的事情：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd001.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd001.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="Fork流程图"></p>
-<blockquote>
-<ol>
-<li>Fork源仓库：这是Github操作，这个操作会复制Joe的仓库（包括：文件、提交历史，issues和其他的东西），复制到了自己的Github账号下作为自己的一个仓库</li>
-<li>clone自己的仓库到本地计算机：Git操作。使用该操作让你发送”请给我发一份我仓库的复制文件”的命令给GitHub。现在这个仓库就会存储在你本地计算机上。</li>
-<li>修改文件：对本地仓库里的内容进行修改</li>
-<li>提交修改：Git操作，将贝蒂所有修改的文件添加到暂存区，并添加提交信息。此操作只在本地完成</li>
-<li>推送提交的内容：Git操作，将提交到暂存区的内容（文件和提交信息）推送到远程仓库（Fork仓库，不是源仓库）</li>
-<li>给Joe发送一个pull request：如果你认为Joe会接受你的修改，你就可以给他发送一个pull request。这是GitHub操作，使用此操作可以帮助你和Joe交流你的修改，并且询问Joe是否愿意接受你的”pull request”，当然，接不接受完全取决于他自己。</li>
-</ol>
-</blockquote>
-<h3 id="同步Fork的仓库"><a href="#同步Fork的仓库" class="headerlink" title="同步Fork的仓库"></a><font color=#2d8896>同步Fork的仓库</font></h3><p>源仓库（Joe的仓库）已经被Joe和其他进行了修改和更新，我们需要在Fork的仓库修改的时候，最好保持Fork仓库和源仓库的最新版本一致下进行修改。所以，需要进行“同步Fork”</p>
-<p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd002.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd002.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
-<blockquote>
-<ol>
-<li>从源仓库中去取出被更新的文件：Git的fetch操作。使用该命令让你可以从源仓库获取最新的文件。</li>
-<li>将这些被更新的文件合并到本地仓库：Git的merge操作。使用该命令使得那些修改更新到你的本地计算机（那些修改暂时存放在一个”分支”中）。记住：步骤1和2经常结合为一个命令使用，合并后的Git命令叫做”pull”。</li>
-<li>把合并后的本地仓库推送到远程的Fork仓库（可选）：必须推送。但可以在步骤2后立即执行push到Fork仓库。也可以，步骤2之后继续自己的修改文件，最后再push到Fork仓库。</li>
-</ol>
-</blockquote>
-<h3 id="Fork与同步Fork的区别"><a href="#Fork与同步Fork的区别" class="headerlink" title="Fork与同步Fork的区别"></a><font color=#2d8896>Fork与同步Fork的区别</font></h3><p><strong>比较一下fork和同步工作流程的区别</strong>：</p>
-<p>当你最初fork一个仓库的时候，信息的流向是从Joe的仓库到你的仓库，然后再到你本地计算机。但是最初的过程之后，信息的流向是从Joe的仓库到你的本地计算机，之后再到你的仓库。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd003.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/forkmd/forkmd003.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><font color=#ad2121>总结</font></h2><p>我希望这是一篇关于GitHub和Git的 <a target="_blank" rel="noopener" href="https://help.github.com/articles/fork-a-repo">fork</a>有用概述。<br>现在，你已经理解了那些概念，你将会更容易地在实际中执行你的代码。GitHub关于fork和<a target="_blank" rel="noopener" href="https://help.github.com/articles/syncing-a-fork">同步</a>的文章将会给你大部分你需要的代码。</p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a><font color=#ad2121>教程</font></h2><h3 id="基本环境"><a href="#基本环境" class="headerlink" title="基本环境"></a><font color=#2d8896>基本环境</font></h3><ul>
+<li>win10、node.js、git</li>
+<li>下载Node.js （<a target="_blank" rel="noopener" href="https://nodejs.org/en/">点击进入官网下载</a>）博主版本号：14.8<br><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/nodejs.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/nodejs.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="nodejs">  </li>
+</ul>
+<p>在 Windows 环境下安装 Node.js 非常简单，仅须到官网下载安装文件并执行即可完成安装。  </p>
+<ul>
+<li>下载Git（<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">点击进入官网下载</a>）版本号为<strong>2.28.0</strong> ，安装教程自行百度  </li>
+</ul>
+<p>  <img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/git.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/git.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="git"></p>
+<h3 id="检验是否安装成功"><a href="#检验是否安装成功" class="headerlink" title="- 检验是否安装成功"></a><font color=#ad2121>- 检验是否安装成功</font></h3><ul>
+<li>同时按下 Win 键和 R 键打开运行窗口,输入<font color=#DC143C>cmd </font>，然后输入以下命令，有相应版本信息显示则安装成功，若不正确可以卸载软件重新安装，此外若安装成功，在桌面右键鼠标，可以看到菜单里多了<font color=#DC143C> Git GUI Here </font>和 <font color=#DC143C>Git Bash Here</font>两个选项，<font color=#DC143C>第一个是图形界面的Git操作</font>，<font color=#DC143C>另一个是命令行</font>  </li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> git -<span class="literal">-version</span></span><br><span class="line"><span class="variable">$</span> node <span class="literal">-v</span></span><br><span class="line"><span class="variable">$</span> npm <span class="literal">-v</span></span><br></pre></td></tr></table></figure>
 
+<p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/installRes.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/installRes.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="installRes">  </p>
+<h3 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="- Hexo安装"></a><font color=#ad2121>- Hexo安装</font></h3><p>选择一个磁盘，新建一个文件夹，自己重命名文件夹（如：我的文件夹为：<font color=#DC143C>Ｅ\illusionk_Blog\Hexo</font>），博客相关文件将储存在此文件夹下  </p>
+<p>在该文件夹下右键鼠标，点击 <font color=#DC143C>Git Bash Here</font>  </p>
+<p>输入以下 npm 命令即可安装  </p>
+<p>第一个命令表示安装 hexo  </p>
+<p>第二个命令表示安装 hexo 部署到 git page 的 deployer  </p>
+<p>如图所示即为安装成功  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="- Hexo初始化"></a><font color=#ad2121>- Hexo初始化</font></h3><p>在刚才新建文件下，再建Hexo 文件夹（如：我的文件夹为：<font color=#DC143C>Ｅ\illusionk_Blog\Hexo</font>）,进入该 <font color=#DC143C>Hexo</font> 文件夹右键鼠标，点击<font color=#DC143C> Git Bash Here</font>，输入以下命令，如图 所示则安装成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/hexoInstal.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/hexoInstal.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="hexoInstal">  </p>
+<h4 id="生成目录如下"><a href="#生成目录如下" class="headerlink" title="生成目录如下"></a><font color=#ad2121>生成目录如下</font></h4><p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/mulu.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/mulu.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="mulu">  </p>
+<h4 id="本地查看hexo博客初始化界面"><a href="#本地查看hexo博客初始化界面" class="headerlink" title="本地查看hexo博客初始化界面"></a><font color=#ad2121>本地查看hexo博客初始化界面</font></h4><p>输入以下命令，即可到浏览器访问  localhost:4000  初始化界面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/localserver.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/localserver.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="localserver">     </p>
+<p><img src="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/localhost.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/illusi1ons/CDN@master/images/makeBlog/localhost.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="localhost"></p>
+<h3 id="部署到托管平台Github"><a href="#部署到托管平台Github" class="headerlink" title="部署到托管平台Github"></a><font color=#ad2121>部署到托管平台Github</font></h3>
   
   
     
     <div class='footer'>
       
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fas fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\posts\54214.html" title="illusion Blog" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">illusion Blog</span></a><a class="item" href="\posts\16107.html" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">Hello World</span></a></div></section></div>
       
       
       
@@ -628,10 +685,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-09T16:31:53+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-10T10:47:42+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月9日</p>
+    <p>更新于：2020年9月10日</p>
   </a>
 </div>
 
@@ -640,7 +697,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Git/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Git</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Blog/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Blog</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div>
 
 
         
@@ -653,7 +710,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://illusionk.com/2020/09/09/forkTeach/&title=Github中的Fork是什么意思 - illusion k&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://illusionk.com/posts/121.html&title=用hexo+github pages+独立域名搭建个人博客 - illusion k&summary="
           
           >
           
@@ -665,7 +722,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://illusionk.com/2020/09/09/forkTeach/&title=Github中的Fork是什么意思 - illusion k&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://illusionk.com/posts/121.html&title=用hexo+github pages+独立域名搭建个人博客 - illusion k&summary="
           
           >
           
@@ -677,7 +734,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://illusionk.com/2020/09/09/forkTeach/&title=Github中的Fork是什么意思 - illusion k&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://illusionk.com/posts/121.html&title=用hexo+github pages+独立域名搭建个人博客 - illusion k&summary="
           
           >
           
@@ -707,17 +764,19 @@
   
     <div class="prev-next">
       
+        <a class='prev' href='/posts/25.html'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Github中的Fork是什么意思</p>
+          <p class='content'>Fork简介通过搜索阅读，得知：
+
+Fork就是把别人的公开的仓库（这里称为源仓库）通过Github操作复制，复制到了自己的Github账号下作为自己的一个仓库（这里称为Fork仓库）
+源仓库≠...</p>
+        </a>
       
-        <a class='next' href='/2020/09/06/makeBlog/'>
-          <p class='title'>用hexo+github pages+独立域名搭建个人博客<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>摘要搭建个人博客条件 ：
-
-博客框架 + 部署静态网站的平台（托管） + 独立域名  
-本教程使用：  hexo + github pages + 独立域名
-不想看介绍，可以直接到教程部分
-
-
-...</p>
+      
+        <a class='next' href='/posts/54214.html'>
+          <p class='title'>illusion Blog<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>illusion Blogsay hello1$ hexo new &quot;say hello&quot;
+</p>
         </a>
       
     </div>
@@ -747,6 +806,50 @@
   
     
     
+  
+
+  <section class="widget category shadow desktop mobile">
+    
+  <header>
+    
+      <a href='/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/Git/" href="/categories/Git/"
+            id="categoriesGit"
+            ><div class='name'>Git</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/Git/Github/" href="/categories/Git/Github/"
+            id="categoriesGitGithub"
+            ><div class='name'>Github</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Hello/" href="/categories/Hello/"
+            id="categoriesHello"
+            ><div class='name'>Hello</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/Hexo/" href="/categories/Hexo/"
+            id="categoriesHexo"
+            ><div class='name'>Hexo</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+  
+
+  
+    
+    
 
 
 
@@ -760,7 +863,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Fork%E7%AE%80%E4%BB%8B"><span class="toc-text">Fork简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B"><span class="toc-text">举例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Fork%E5%B9%B6%E6%9B%B4%E6%96%B0%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="toc-text">Fork并更新一个仓库的流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5Fork%E7%9A%84%E4%BB%93%E5%BA%93"><span class="toc-text">同步Fork的仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Fork%E4%B8%8E%E5%90%8C%E6%AD%A5Fork%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">Fork与同步Fork的区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%98%E8%A6%81"><span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%99%E7%A8%8B"><span class="toc-text">教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83"><span class="toc-text">基本环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E9%AA%8C%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="toc-text">- 检验是否安装成功</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E5%AE%89%E8%A3%85"><span class="toc-text">- Hexo安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">- Hexo初始化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E5%A6%82%E4%B8%8B"><span class="toc-text">生成目录如下</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8Bhexo%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96%E7%95%8C%E9%9D%A2"><span class="toc-text">本地查看hexo博客初始化界面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0Github"><span class="toc-text">部署到托管平台Github</span></a></li></ol></li></ol>
     </div>
   </section>
 
